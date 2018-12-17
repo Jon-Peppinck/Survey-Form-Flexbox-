@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+/* BODY */
+body {
+  background-color: #a9d7d1;
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif; 
+  line-height: 1.25rem;
+}
+/* FORM BACKGROUND */
+#form-bg {
+  background-color: rgb(250, 250, 250);
+  width: 75%;
+  margin: auto;
+  border-radius: 5px;
+  padding: 20px 30x;
+  margin-bottom: 20px;
+}
+/* SURVEY FORM */
+#survey-form {
+  padding: 0 30px 10px 30px;
+}
+/* TITLE */
+#title {
+  font-size: 2em;
+  text-align: center;
+  font-weight: 800;
+  color: #333;
+}
+/* TITLE DESCRIPTION */
+#description {
+  text-align: center;
+  padding: 1.75rem 1.25rem 0.25rem 1.25rem;
+}
+
+/* FLEX ROW */
+#name-container,
+#email-container,
+#age-container,
+#role-container,
+#field-radio,
+#like-most,
+#choices-checkbox, 
+#text-area {
+  display: flex;
+  flex-direction: row;
+  padding: 10px 50px;
+}
+
+#role-container, 
+#field-radio,
+#like-most {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+#name-label,
+#email-label,
+#number-label,
+label[for="dropdown"],
+label[id="radio-question"],
+label[for="dropdown2"],
+#checkbox-label,
+label[for="comments"] {
+  width: 45%;
+  text-align: right;
+  flex-wrap: wrap;
+}
+
+#name,
+#email,
+#number, 
+select[id="dropdown"],
+#radio-right,
+#dropdown2,
+#comments,
+#checkbox-options {
+  width: 55%;
+  max-width: 300px;
+  margin-left: 20px;
+  padding: 5px 10px;
+  text-align: left;
+}
+
+#radio-right,
+#checkbox-options {
+  padding-left: 0px;
+}
+
+#like-most {
+  padding: 10px 0;
+}
+
+#text-area {
+  padding-top: 20px;
+}
+
+#choices-checkbox {
+  padding-top: 0px;
+}
+
+#submit {
+  display: block;
+  font-size: 20px;
+  margin: 20px auto;
+  background-color: #59ace0;
+  color: #fff;
+  border: 1px solid #59ace0;
+  border-radius: 4px;
+  width: 100px;
+  height: 40px;
+}
+
+#submit:hover {
+  background-color: #333;
+}
+
+#dropdown,
+#dropdown2 {
+  width: 140px;
+  height: 35px;
+}
+
+#radio-right > input,
+#radio-right > label {
+  margin-bottom: 10px;
+}
+
+#checkbox-options > input {
+  margin-bottom: 10px;
+}
+
+/* MEDIA QUERY */
+@media (max-width: 600px) {
+
+  #name-container,
+  #email-container,
+  #age-container,
+  #role-container,
+  #field-radio,
+  #like-most,
+  #choices-checkbox, 
+  #text-area {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 10px;
+}
+
+  #name-label,
+  #email-label,
+  #number-label,
+  label[for="dropdown"],
+  label[id="radio-question"],
+  label[for="dropdown2"],
+  #checkbox-label,
+  label[for="comments"] {
+    width: 100%;
+    text-align: left;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+  }
+
+  #checkbox-label {
+    margin-bottom: 0px;
+  }
+
+  #name,
+  #email,
+  #number, 
+  select[id="dropdown"],
+  #radio-right,
+  #dropdown2,
+  #comments,
+  #checkbox-options {
+    width: 100%;
+    max-width: 300px;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 5px 10px;
+    text-align: left;
+}
+
+}
